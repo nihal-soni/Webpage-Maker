@@ -113,3 +113,20 @@ grep       Print lines matching a pattern
 rebase     Reapply commits on top of another base tip
 
 tag        Create, list, delete or verify a tag object signed with GPG
+
+
+
+# IGNORING PATTERNS
+
+Preventing unintentional staging or commiting of file
+
+    logs/
+    *.notes
+    pattern*/
+    
+    Save a file with desired paterns as .gitignore with either direct string 
+    matches or wildcard globs
+
+
+    git config --global core.excludesfile [file]
+    system wide ignore patern for all local repositories
